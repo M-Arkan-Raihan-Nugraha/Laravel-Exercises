@@ -7,10 +7,10 @@ use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\AnggotaController;
 use App\Http\Controllers\PeminjamanController;
 
-Route::resource('buku', BukuController::class);
-Route::resource('kategori', KategoriController::class);
-Route::resource('anggota', AnggotaController::class);
-Route::resource('peminjaman', PeminjamanController::class);
+Route::resource('/buku', BukuController::class);
+Route::resource('/kategori', KategoriController::class);
+Route::resource('/anggota', AnggotaController::class);
+Route::resource('/peminjaman', PeminjamanController::class);
 
 Route::get('/test', [HomeController::class, 'index']);
 Route::get('/', [HomeController::class, 'index']);
